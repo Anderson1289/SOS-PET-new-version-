@@ -7,7 +7,7 @@ export const ContainerHeader = styled.div `
         height: 500px;
     } 
     .title {
-        color:#000
+        color:#000;
     }
 `
 

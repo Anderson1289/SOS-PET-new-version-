@@ -10,7 +10,7 @@ const Title = styled.h1 `
 export function App() {
   return (
     <>
-      <Login/>
+      <Header/>
       <GlobalStyle/>
     </>
   );

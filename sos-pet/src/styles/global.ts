@@ -3,7 +3,7 @@ import { createGlobalStyle } from 'styled-components';
 export const GlobalStyle = createGlobalStyle `
     :root {
         --background: #f2f0f5;
-        --yelow: #ffc107;
+        --yellow: #ffc107;
         --black: #191818;
     }
 
@@ -24,7 +24,7 @@ export const GlobalStyle = createGlobalStyle `
 
     body {
         background: var(---background);
-        -webkit-font-smoothing: antialiased;
+        overflow-x: hidden;
     }
 
     body, input, textarea, button {

@@ -1,31 +1,36 @@
-import { Row, Col, Form, Button } from 'react-bootstrap';
+import { Row, Col, Form, Button, Navbar, Container } from 'react-bootstrap';
 import { Body } from './styles';
-import { FiMail, FiUnlock } from 'react-icons/fi';
+import Logo from '../../assets/logoOther.png'
 
-export function Login (){
-    return(
+export function Login() {
+    return (
         <>
             <Body className="container-body ">
-                <img 
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHjfJz4Yx_m8e9s20tOG31_bkoj668YiyaZA&usqp=CAU" 
-                    alt="Login App"
-                    className="mt-5" 
-                />
-                <h1 className="title">SOS PET</h1>
-                <Row className="form-login">
-                    <Col lg={4} md={6} sm={12} className="text-center">
-                        <Form className="login">
+                <Navbar className="menu" expand="lg">
+                    <img
+                        src={Logo}
+                        width="50"
+                        height="50"
+                        className="d-inline-block align-top"
+                        alt="logo"
+                    />
+                    <Container>
+                        <Navbar.Brand href="#home" className="title-main">SOS PET</Navbar.Brand>
+                    </Container>
+                </Navbar>
+                <Row className="landing">    
+                    <Col lg={4} md={6} sm={12}>
+                        <Form className="form-login">
+                            <h1 className="title">Login</h1>
                             <Form.Group className="mb-3" controlId="formBasicEmail">
-                                <FiMail/>
-                                <Form.Control type="email" placeholder="Digite seu email"></Form.Control>
+                                <Form.Control type="email" placeholder="Digite seu email" required/>
                             </Form.Group>
 
                             <Form.Group className="mb-3" controlId="formBasicPassword">
-                                <FiUnlock/>
-                                <Form.Control type="password" placeholder="Digite sua senha" />
+                                <Form.Control type="password" placeholder="Digite sua senha" required/>
                             </Form.Group>
-                            <Button variant="primary btn-block" type="submit">
-                                Login
+                            <Button className="button-enter" type="submit">
+                                Entrar
                             </Button>
                         </Form>
                     </Col>
