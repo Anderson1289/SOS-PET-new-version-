@@ -12,7 +12,7 @@ export const ContainerHeader = styled.div `
 `
 
 export const Menu  = styled.header `  
-    background: var(--yelow);
+    background: var(--yellow);
 `
 
 export const Title = styled.h1 `
