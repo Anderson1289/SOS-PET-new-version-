@@ -1,23 +1,12 @@
-import { Row, Col, Form, Button, Navbar, Container } from 'react-bootstrap';
+import { Row, Col, Form, Button } from 'react-bootstrap';
 import { Body } from './styles';
-import Logo from '../../assets/logoOther.png'
+import { MenuInitial } from '../MenuInitial';
 
 export function Login() {
     return (
         <>
             <Body className="container-body ">
-                <Navbar className="menu" expand="lg">
-                    <img
-                        src={Logo}
-                        width="50"
-                        height="50"
-                        className="d-inline-block align-top"
-                        alt="logo"
-                    />
-                    <Container>
-                        <Navbar.Brand href="#home" className="title-main">SOS PET</Navbar.Brand>
-                    </Container>
-                </Navbar>
+                <MenuInitial/>
                 <Row className="landing">    
                     <Col lg={4} md={6} sm={12}>
                         <Form className="form-login">
@@ -29,8 +18,15 @@ export function Login() {
                             <Form.Group className="mb-3" controlId="formBasicPassword">
                                 <Form.Control type="password" placeholder="Digite sua senha" required/>
                             </Form.Group>
+                            <Form.Group className="mb-3" controlId="formBasicCheckbox">
+                                <Form.Check className="user" type="checkbox" label="Eu concordo com o termo do usuário" required/>
+                                <a href="http://" className="password" target="_blank" rel="noopener noreferrer">Esqueci minha senha</a>
+                            </Form.Group>
                             <Button className="button-enter" type="submit">
                                 Entrar
+                            </Button>
+                            <Button className="sign-up" type="submit">
+                                Cadastre-se
                             </Button>
                         </Form>
                     </Col>
