@@ -5,7 +5,7 @@ import { MenuInitial } from '../MenuInitial';
 export function Login() {
     return (
         <>
-            <Body className="container-body ">
+            <Body className="container-body">
                 <MenuInitial/>
                 <Row className="landing">    
                     <Col lg={4} md={6} sm={12}>
