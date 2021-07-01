@@ -19,7 +19,7 @@ export function Login() {
                                 <Form.Control type="password" placeholder="Digite sua senha" required/>
                             </Form.Group>
                             <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                                <Form.Check className="user" type="checkbox" label="Eu concordo com o termo do usuário" required/>
+                                <Form.Check className="user" type="checkbox" label="Eu concordo com os termos e condições de uso" required/>
                                 <a href="http://" className="password" target="_blank" rel="noopener noreferrer">Esqueci minha senha</a>
                             </Form.Group>
                             <Button className="button-enter" type="submit">

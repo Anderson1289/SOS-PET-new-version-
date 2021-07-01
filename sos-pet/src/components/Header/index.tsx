@@ -34,7 +34,7 @@ export function Header (){
                     alt="First slide"
                     />
                     <Carousel.Caption>
-                    <h3 className="title">Todo animal de rua merece um lar</h3>
+                    <h3 className="title">Todo animal merece um lar</h3>
                     <p className="title">E todo lar merece um animal que veio da rua.</p>
                     </Carousel.Caption>
                 </Carousel.Item>

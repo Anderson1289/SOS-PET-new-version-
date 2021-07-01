@@ -18,45 +18,32 @@ export function SignUp(){
                                     <p className="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Cadastre-se</p>
 
                                     <form className="mx-1 mx-md-4">
-
-                                    <div className="d-flex flex-row align-items-center mb-4">
-                                        <FaUser className="fas fa-user fa-lg me-3 fa-fw"/>
-                                        <div className="form-outline flex-fill mb-0">
-                                        <input type="text" className="form-control" required/>
-                                        <label className="form-label">Nome</label>
+                                        <div className="d-flex flex-row align-items-center mb-4">
+                                            <FaUser className="fas fa-user fa-lg me-3 fa-fw"/>
+                                            <input type="text" className="form-control" placeholder="Nome" required/>
                                         </div>
-                                    </div>
 
-                                    <div className="d-flex flex-row align-items-center mb-4">
-                                        <FaEnvelope className="fas fa-envelope fa-lg me-3 fa-fw"/>
-                                        <div className="form-outline flex-fill mb-0">
-                                        <input type="email" className="form-control" required/>
-                                        <label className="form-label">E-mail</label>
+                                        <div className="d-flex flex-row align-items-center mb-4">
+                                            <FaEnvelope className="fas fa-envelope fa-lg me-3 fa-fw"/>
+                                        <input type="email" className="form-control" placeholder="E-mail" required/>
                                         </div>
-                                    </div>
 
-                                    <div className="d-flex flex-row align-items-center mb-4">
-                                        <FaLock className="fas fa-lock fa-lg me-3 fa-fw"/>
-                                        <div className="form-outline flex-fill mb-0">
-                                        <input type="password" className="form-control" required/>
-                                        <label className="form-label">Senha</label>
+                                        <div className="d-flex flex-row align-items-center mb-4">
+                                            <FaLock className="fas fa-lock fa-lg me-3 fa-fw"/>
+                                            <input type="password" className="form-control" placeholder="Senha" required/>
                                         </div>
-                                    </div>
 
-                                    <div className="d-flex flex-row align-items-center mb-4">
-                                        <FaKey className="fas fa-key fa-lg me-3 fa-fw"/>
-                                        <div className="form-outline flex-fill mb-0">
-                                            <input className="password form-control" required/>
-                                            <label className="form-label"> Repita sua senha</label>
+                                        <div className="d-flex flex-row align-items-center mb-4">
+                                            <FaKey className="fas fa-key fa-lg me-3 fa-fw"/>
+                                                <input className="password form-control" placeholder="Repita sua senha" required/>
                                         </div>
-                                    </div>
 
-                                    <UseTerm className="form-check d-flex justify-content-center mb-5">
+                                        <UseTerm className="form-check d-flex justify-content-center mb-5">
                                         <input
-                                        className="form-check-input me-2"
-                                        type="checkbox"
-                                        value=""
-                                        id="form2Example3c"
+                                            className="form-check-input me-2"
+                                            type="checkbox"
+                                            value=""
+                                            id="form2Example3c"
                                         />
                                         <label className="form-check-label">
                                             Concordar com todas as declarações <a href="#!" className="useTerm">nos Termos de serviço</a>
