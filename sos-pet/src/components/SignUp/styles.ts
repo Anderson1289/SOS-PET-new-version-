@@ -15,6 +15,16 @@ export const Section = styled.div `
         font-family: Poppins;
         box-sizing: border-box;
     }
+    .form-check-input {
+        border-bottom: 1px solid #999;
+        background: var(--black);
+        width: 1.5rem;
+    }
+    .form-check-input[type=checkbox]:checked {
+        background: var(--yellow);
+        width: 1.5rem;
+        outline: none;
+    }
 
     textarea, input, select,
     textarea:focus, input:focus, select:focus {
