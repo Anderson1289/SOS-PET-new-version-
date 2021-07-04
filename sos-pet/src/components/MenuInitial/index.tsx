@@ -14,9 +14,7 @@ export function MenuInitial() {
                         className="d-inline-block align-top"
                         alt="logo"
                     />
-                    <Container>
-                        <Navbar.Brand href="#home" className="title-main">SOS PET</Navbar.Brand>
-                    </Container>
+                    <Navbar.Brand href="#home" className="title-main">SOS PET</Navbar.Brand>
                 </Navbar>
             </Body>
         </>

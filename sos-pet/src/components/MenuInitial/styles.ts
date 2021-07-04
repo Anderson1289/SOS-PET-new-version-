@@ -10,6 +10,7 @@ export const Body = styled.div `
         font-size: 30px;
         text-shadow: 1px 1px 2px black;
         font-family: monospace;
+        margin-left: 2rem;
     }
     .title, .title-main {
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
