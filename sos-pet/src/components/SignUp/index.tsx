@@ -1,14 +1,15 @@
-import { FormEvent, useState } from 'react';
+import { FormEvent, useEffect, useState } from 'react';
 import { MenuInitial } from '../MenuInitial';
-import { FaEnvelope, FaUser, FaLock, FaKey } from "react-icons/fa";
+import { FaEnvelope, FaUser, FaLock } from "react-icons/fa";
+import { RiUserFollowFill } from "react-icons/ri";
 import { Section, Body, UseTerm } from './styles';
 import Pets from '../../assets/pets.png'
 
 export function SignUp(){
     const [name, setName] = useState('');
+    const [userName, setUserName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const [confirmPassword, setConfirmPasswordd] = useState('');
     const [useTerm, setUseTerm] = useState('');
 
     function handleCreateNewUser(event: FormEvent){
@@ -18,14 +19,16 @@ export function SignUp(){
             name,
             email,
             password,
-            confirmPassword,
+            userName,
             useTerm
         })
     }
 
-    function teste(){
-        console.log('Fui clicado!')
-    }
+    useEffect(() => {
+        fetch('http://localhost:3333/api/users')
+            .then(response => response.json())
+            .then(date => console.log(date))
+    }, []);
 
     return (
         <> 
@@ -55,6 +58,18 @@ export function SignUp(){
                                         </div>
 
                                         <div className="d-flex flex-row align-items-center mb-4">
+                                            <RiUserFollowFill className="fas fa-key fa-lg me-3 fa-fw"/>
+                                                <input 
+                                                    className="password form-control" 
+                                                    type="text"  
+                                                    placeholder="Digite o seu Username" 
+                                                    value={userName} 
+                                                    onChange = {event => setUserName(event.target.value)} 
+                                                    required
+                                                />
+                                        </div>
+
+                                        <div className="d-flex flex-row align-items-center mb-4">
                                             <FaEnvelope className="fas fa-envelope fa-lg me-3 fa-fw"/>
                                         <input 
                                             type="email" 
@@ -78,17 +93,7 @@ export function SignUp(){
                                             />
                                         </div>
 
-                                        <div className="d-flex flex-row align-items-center mb-4">
-                                            <FaKey className="fas fa-key fa-lg me-3 fa-fw"/>
-                                                <input 
-                                                    className="password form-control" 
-                                                    type="password"  
-                                                    placeholder="Repita sua senha" 
-                                                    value={confirmPassword} 
-                                                    onChange = {event => setConfirmPasswordd(event.target.value)} 
-                                                    required
-                                                />
-                                        </div>
+                                        
 
                                         <UseTerm className="form-check d-flex justify-content-center mb-5">
                                         <input
