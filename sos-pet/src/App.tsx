@@ -13,7 +13,7 @@ const Title = styled.h1 `
 export function App() {
   return (
     <>
-      <SignUp/>
+      <Header/>
       <GlobalStyle/>
     </>
   );
