@@ -8,6 +8,7 @@ The following tools will be used in the construction of this project:
 - [Next.js][nextjs]
 - [React][reactjs]
 - [TypeScript][typescript]
+- [MirageJS][mirage]
 
 #### Clone this repository 
 $ git clone https://github.com/erikaperciliano/SOS-PET-new-version-.git
